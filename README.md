@@ -19,10 +19,10 @@ An arcade-style game written in MicroPython for the Raspberry Pi Pico 2 W (RP235
 ### 2. Install dev tools (on this machine)
 
 ```powershell
-py -m pip install --user mpremote
+py -m pip install -r requirements-dev.txt
 ```
 
-`mpremote` talks to the board over its USB serial port to run code, copy files, and open a REPL.
+This installs `mpremote`, which talks to the board over its USB serial port to run code, copy files, and open a REPL. It's a host-side tool only — it doesn't run on the Pico, and there's nothing to install on-device for this project yet.
 
 ### 3. Editor
 
